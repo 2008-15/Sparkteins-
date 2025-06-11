@@ -1,0 +1,165 @@
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewpoint"
+content="width=distance-width,initial-scale=1.0"/>
+<title>sparkteins- World of robots</title>
+<style>
+body {
+font-family: 'Segoe UI', sans-serif;
+Margin: 0;
+padding: 0;
+background: linear-gradient ( to right, #00c6ff, #0072ff);
+colour: #fff;
+overflow-x: hidden;
+}
+header {
+background-colour: #111;
+padding: 40px 20px;;
+text-align: center;
+animation: slideDown 1s ease-out;
+}
+header h1{
+margin:0;
+font-size: 3em;
+color: #00ffcc;
+}
+header p{
+margin-top:10px
+font-size:1.2em;
+}
+section {
+padding:40px 20px
+}
+h2 {
+color: #ffeb3b;
+text-align: center
+margin-bottom:20px;
+animation: fadeIn 1s ease-out;
+}
+p{
+text-align:center
+max-width: 800px;
+margin: 0 auto 40px auto;
+animation:fadeIn 1.2s ease-out;
+}
+robots-section {
+display: grid;
+grid-template-columns: repeat auto-fit,minmax (280px,1fr)));
+gap:20px;
+padding:20px;
+}
+robot-card {
+background-colour: rgba (255,255,0.1);
+border-radius:15px;
+box-shadow: 0 40px 10px rgba (0,0,0,0.3);
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+animation:fadeInUp 1s ease forwards;
+opacity:0;
+}
+robot-card:hover {
+transform:translateY (-10px);
+box-shadow: 0 6px 15px rgba (0,0,0,0.5);
+}
+robot-card img {
+max-width:100%
+border-radius:10px;
+margin-bottom:15px;
+}
+contact-section {
+text-align:center;
+padding:40px 2opx;
+background-colour:#000a;
+animation:fadeIn is ease forwards;
+}
+contact-section h2 [
+color:#00ffcc;
+margin-bottom:15px;
+}
+contact-section p [
+font-size:1.1em;
+}
+social-links a {
+margin:0 10px;
+font-size:1.4em;
+color:#fff;
+text-decoration:none;
+transition:color 0.3s;
+}
+social-links a: hover {
+color:#ffeb3b;
+}
+footer {
+background-colour:#111;
+text-align:center;
+padding:15px;
+font-size:0.9em;
+}
+@keyframes slideDown {
+0% {
+transform:translateY (-30px);
+opacity:0;
+}
+100% {
+transform:translateY(0);
+opacity: 1; }
+}
+@media screen and (max-width:600px) {
+header h1 {
+font-size:2em; }
+}
+</style>
+</head>
+</body>
+<header>
+<h1>sparkteins</h1>
+<p>Explore the fascinating world of robots </p>
+</header>
+<section>
+<h2>Types of Robots & their uses</h2>
+<p> Robots are machines designed to carry out tasks automatically. lets look at some of the main types and how they help humans in different fields.</p>
+<div
+class="robots-section">
+<div class="robot-card" style="animation-delay:0.2s;">
+<img scr="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/ASIMO_front_view.jpg" alt="Humanoid Robot">
+<h3>Humanoid Robot</h3>
+<p>These Robots resemble humans and are used in customer service,health care, and research to interact with people naturally./p>
+</div>
+<div class="robot-card" style="animation-delay:0.4s;">
+<img scr="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/industrial_robot.jpg">
+<h3>Industrial Robot</h3>
+<p>Used in factories for assembling,welding, and packaging. They increase efficiency and precision in manufacturing.</p>
+</div>
+<div class="robot-card" style="animation delay:0.6s;"> 
+<img scr ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/NA0_Robot_humanoid.jpg/220px-NA0_robot_humanoid.jpg" alt="Educational Robots </h3>
+<p>Designed to teach students about programming and robotics through interactive learning and activities.</p>
+</div>
+<div class="robot-card" style ="animation-delay:0.8s;">
+<img scr="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Mars_Rover.jpg/250px-Mars_Rovers.jpg" alt="Exploration Robots</h3>
+<P>Used in space, deep-sea, a d dangerous environments to explore places where humans cannot easily go.</p>
+</div>
+</div>
+</section>
+<section class="contact-section">
+<h2>follow us or contact</h2>
+<p>for more references,, contact us on</strong>08109152555</strong><br>
+or follow sparkteins n social media: </p>
+<div class="social-links">
+<a href="https.com" target="sparkteins"> facebook</a>
+</footer>
+&copy;2025 sparkteins. All right reserved.
+</footer>
+<script>
+window.add Even Listener ('DOMContent Loaded', () => {
+document.querySelector All ('. robot-card'). for each((card,index) => {
+setTimeout(()=> {
+card.style.opacity='1';
+}, index *200+400);
+});
+});
+</script>
+</body>
+</html>
+
